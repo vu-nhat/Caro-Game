@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Home</title>
+    <link rel="stylesheet" href="../static/css/home.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="account-info">
+            <h2>Thông tin tài khoản</h2>
+            <p id="account-details">Đang tải thông tin tài khoản...</p>
+        </div>
+
+        <div class="menu"> <!-- Sửa lỗi đóng thẻ div -->
+            <h2>Menu</h2>
+            <ul>
+                <li>
+                    <a onclick="playWithMachine(); return false;" class="button-link">Chơi với máy</a>
+                </li>
+                <li>
+                    <a onclick="playOnline(); return false;" class="button-link">Chơi online</a>
+                </li>
+                <li>
+                    <a onclick="viewMatchHistory(); return false;" class="button-link">Lịch sử ván đấu</a>
+                </li>
+                <li>
+                    <a onclick="logout(); return false;" class="button-link">Đăng xuất</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="../static/js/script_home.js"></script>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="../static/css/login.css">
+</head>
+<body>
+
+<div class="login-container">
+    <!-- Left section for image -->
+    <div class="image-section">
+        <img src="../static/images/me.PNG" alt="Game Image">
+    </div>
+
+    <!-- Right section for registration form -->
+    <div class="form-section">
+        <h2>Đăng ký tài khoản</h2>
+
+        <form id="registerForm">
+            <div class="input-group">
+                <label for="name">Họ và tên:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input-group">
+                <label for="username">Tên người dùng:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Mật khẩu:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="input-group">
+                <label for="confirmPassword">Nhập lại mật khẩu:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+            </div>
+        
+            <!-- Hiển thị lỗi nếu có -->
+            <div id="error-message" style="color:red;"></div>
+        
+            <div class="button-group">
+                <button type="submit">Đăng ký</button>
+                <button type="button" onclick="window.location.href='/templates/login.html'">Quay lại đăng nhập</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="../static/js/script_user.js"></script>
+</body>
+</html>

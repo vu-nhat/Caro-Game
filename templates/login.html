@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+<!--  <link rel="stylesheet" href="../static/css/login.css">-->
+  <link rel="stylesheet" href="../static/css/login.css">
+</head>
+<body>
+
+<div class="login-container">
+  <!-- Left section for image -->
+  <div class="image-section">
+<!--    <img src="../static/images/me.PNG" alt="Game Image">-->
+    <img src="../static/images/me.PNG" alt="Game Image">
+  </div>
+
+  <!-- Right section for login form -->
+  <div class="form-section">
+    <h2>Đăng nhập vào trò chơi</h2>
+
+    <form id="loginForm">
+      <div class="input-group">
+        <label for="username">Tên người dùng:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+
+      <div class="input-group">
+        <label for="password">Mật khẩu:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+
+      <div class="button-group">
+        <button type="submit">Đăng nhập</button>
+        <button type="button" onclick="window.location.href='/templates/register.html'">Tạo tài khoản</button>
+      </div>
+    </form>
+
+    <!-- Thông báo lỗi (nếu có) -->
+    <div id="error-message" style="color: red;"></div>
+  </div>
+</div>
+<script src="../static/js/script_user.js"></script>
+
+</body>
+</html>
